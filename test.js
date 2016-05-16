@@ -7,7 +7,12 @@ sftp.on('ready', function () {
 	sftp.mkdir('./test2', true, function (err, data) {
 		console.log(err, data);
 
-		sftp.end();
+		//sftp.end();
+	});
+
+	sftp.get('./asdfsadfsadf.asdfasdf', function (err, stream) {
+		console.log(err);
+
 	});
 }).on('error', function (err) {
 	console.log(err);
