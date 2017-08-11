@@ -18,6 +18,7 @@ I intend on implementing the following methods in a compatible way with mscdex/n
 * .mkdir() - done
 * .rename() - done
 * .delete() - done
+* .append() - in testing
 
 All other methods will be the same as defined in [ssh2-streams/SFTPStream](https://github.com/mscdex/ssh2-streams/blob/master/SFTPStream.md#sftpstream-methods).
 
