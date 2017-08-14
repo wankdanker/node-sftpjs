@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gitter-monotype/node-sftpjs"
+    "url": "https://github.com/wankdanker/node-sftpjs"
   },
   "keywords": [
     "sftp",
@@ -18,12 +18,12 @@
     "file",
     "transfer"
   ],
-  "author": "Dan VerWeire & Ilan Gitter",
+  "author": "Dan VerWeire",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gitter-monotype/node-sftpjs/issues"
+    "url": "https://github.com/wankdanker/node-sftpjs/issues"
   },
-  "homepage": "https://github.com/gitter-monotype/node-sftpjs",
+  "homepage": "https://github.com/wankdanker/node-sftpjs",
   "dependencies": {
     "ssh2": "^0.4.10"
   }
