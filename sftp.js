@@ -2,7 +2,7 @@ var inherits = require('util').inherits
 	, EventEmitter = require('events').EventEmitter
 	, Client = require('ssh2').Client
 	, SFTPWrapper = require('./lib/sftp-wrapper') //needed to modify the prototype of ssh2/SFTPWrapper
-;
+	;
 
 module.exports = SFTPClient
 
