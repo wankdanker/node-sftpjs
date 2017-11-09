@@ -4,7 +4,7 @@ var sftp = SFTP();
 
 sftp.on('ready', function () {
 	console.log('ready');
-	sftp.mkdir('./test2', true, function (err, data) {
+	sftp.mkdir('my/subfolder/dir', true, function (err, data) {
 		console.log(err, data);
 
 		//sftp.end();
