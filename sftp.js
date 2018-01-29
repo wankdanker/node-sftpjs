@@ -65,6 +65,8 @@ inherits(SFTPClient, EventEmitter);
 SFTPClient.prototype.connect = function (options) {
 	var self = this;
 
+	self.closed = false;
+
 	self.conn.connect.apply(self.conn, arguments);
 
 	return self;
