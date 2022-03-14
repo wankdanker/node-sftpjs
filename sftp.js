@@ -1,7 +1,7 @@
 var inherits = require('util').inherits
 	, EventEmitter = require('events').EventEmitter
 	, Client = require('ssh2').Client
-	, SFTPWrapper = require('./lib/sftp-wrapper') //needed to modify the prototype of ssh2/SFTPWrapper
+	, wrap = require('./lib/sftp-wrapper')
 	;
 
 module.exports = SFTPClient
@@ -38,6 +38,8 @@ function SFTPClient (options) {
 				self.emit('error', err);
 			}
 
+			wrap(sftp);
+			
 			var noCopy = ['on', 'once', 'emit', 'end']
 
 			Object.keys(sftp.constructor.prototype).forEach(function (key) {

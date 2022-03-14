@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/wankdanker/node-sftpjs",
   "dependencies": {
-    "ssh2": "^0.4.10"
+    "ssh2": "^1.7.0"
   }
 }
