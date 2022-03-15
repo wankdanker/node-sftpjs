@@ -40,9 +40,11 @@ function SFTPClient (options) {
 
 			wrap(sftp);
 			
-			var noCopy = ['on', 'once', 'emit', 'end']
+			var noCopy = ['on', 'once', 'emit', 'end'];
 
-			Object.keys(sftp.constructor.prototype).forEach(function (key) {
+			var properties = Object.getOwnPropertyNames(Object.getPrototypeOf(sftp));
+
+			properties.forEach(function (key) {
 				if (~noCopy.indexOf(key)) {
 					return;
 				}
